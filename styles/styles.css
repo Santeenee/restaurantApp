@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
     background-color: #202020;
+    /* background-color: white; */
 }
 
 .container {
@@ -27,12 +28,19 @@
                          "ft";
 }
 
+.nobullet {
+    list-style: none;
+}
 
 /************** view **************/
 
 #menu-view {                
-    margin-top: 3%;
+    margin-top: 3%; 
     background-color: white;
+}
+
+.menu-component {
+    margin: 5%;
 }
 
 .menu-view-section {
@@ -49,21 +57,31 @@
 } 
 
 #view-content {
-    
     grid-area: cont;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
-
-
 
 #view-footer {
     grid-area: ft;
 }
 
+.section-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
 
 /************* first *************/  
 
 #first-selection {                
     margin-top: 3%;
+    background-color: white;
 }
 
 .menu-first-section {
@@ -93,7 +111,26 @@
 
 .menu-view-section * {
     background-color: inherit;
-    
+}
+
+.menu-first-section * {
+    background-color: inherit;
+}
+
+.menu-second-section * {
+    background-color: inherit;
+}
+
+.menu-dessert-section * {
+    background-color: inherit;
+}
+
+.menu-drinks-section * {
+    background-color: inherit;
+}
+
+.menu-confirm-section * {
+    background-color: inherit;
 }
 
 /************* second *************/
@@ -113,16 +150,15 @@
 
 #second-header {
     grid-area: hd;
+}
+
+#second-footer {
+    grid-area: ft;
 } 
 
 #second-content {
     grid-area: cont;
 }
-
-#second-footer {
-    grid-area: ft;
-}
-
 
 /************* dessert *************/
 
@@ -180,7 +216,7 @@
 }
 
 
-/************* confirm *************/
+/************* confirm *************/ /*(NOT ACTUALLY IN HTML ATM..)*/
 
 #confirm-selection {   
     margin-top: 3%;   
@@ -207,8 +243,6 @@
     grid-area: ft;
 }
 
-
-
 #first-selection {
     background-color: aqua;
 }
@@ -228,4 +262,47 @@
 #confirm-selection {
     background-color: olivedrab;
 }
+
+/************** Order selection *****************/ 
+
+.order-selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.order-flex-section {
+    margin-left: 0;
+    margin-bottom: 10%;
+}
+
+#btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#text {
+    
+}
+
+.order-content {
+    width: 30%;
+} 
+
+/************** Btns *****************/ 
+
+.btn-advance {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.btn-advance-wrap {
+
+} 
 
